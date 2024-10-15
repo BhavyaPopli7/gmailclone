@@ -22,7 +22,7 @@ const SendEmail = () => {
         e.preventDefault();
         console.log(formdata);
         try{
-          const res = await axios.post("http://localhost:4000/api/v1/email/create",formdata,{
+          const res = await axios.post("https://gmailclone-ilxa.onrender.com/api/v1/email/create",formdata,{
             headers:{
               "Content-Type":"application/json"
             },
