@@ -23,11 +23,12 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
 
-const corsOptions = {
-    origin: 'https://gmailclone-ilxa.onrender.com',
-    credentials: true
-}
-app.use(cors(corsOptions));
+app.use(
+	cors({
+		origin: "*",
+		credentials: true,
+	})
+);
 
 //Routes
 app.use("/api/v1/user", userRoute)
