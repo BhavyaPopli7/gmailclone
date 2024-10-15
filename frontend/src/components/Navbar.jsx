@@ -19,7 +19,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   const logoutHandler = async()=>{
     try{
-      const res = await axios.get("http://localhost:4000/api/v1/user/logout");
+      const res = await axios.get("https://gmailclone-ilxa.onrender.com/api/v1/user/logout");
       console.log(res);
       toast.success(res.data.message);
       dispatch(setAuthUser(null));
