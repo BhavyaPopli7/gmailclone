@@ -13,7 +13,7 @@ const Mail = () => {
     const params = useParams();
     const deleteHandler = async() =>{
         try{
-         const res = await axios.delete(`http://localhost:4000/api/v1/email/${params.id}`,{
+         const res = await axios.delete(`https://gmailclone-ilxa.onrender.com/api/v1/email/${params.id}`,{
             withCredentials:true
          })
 
