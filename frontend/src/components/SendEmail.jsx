@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import appSlice, { setEmails, setOpen } from '../redux/appSlice';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const SendEmail = () => {
   const [formdata,setFormdata] = useState({
